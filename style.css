@@ -16,7 +16,6 @@ body {
     align-items: center;
 }
 
-
 #main {
     height: calc(100vh - 60px);
     display: flex;
