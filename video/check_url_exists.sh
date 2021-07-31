@@ -2,7 +2,7 @@
 #cat /dev/null >a.txt
 line=$1
 #type=$(curl -s --head $line |grep 'video/mp4')
-type=$(curl -s -o /dev/null -I -w "%{content_type}" $line)
+type=$(curl -s -o /dev/null -I -w "%{content_type}" "https://baidu.a.yximgs.com"$line)
 if [ -n "$type" ]; then
   echo $line>>a.txt
 else
